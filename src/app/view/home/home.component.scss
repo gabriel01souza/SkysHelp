@@ -1,0 +1,23 @@
+.home {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background: orange;
+
+    .title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 5vh;
+    }
+
+    .text {
+        top: 10vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,66 @@
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-content: space-evenly;
+    background: orange;
+
+    .card {
+        width: 250px;
+        margin: 10vh auto 10px auto;
+        background-image: linear-gradient(to bottom, rgb(0, 14, 96) 10%, red);
+
+        .photoEmployee {
+            margin:0px auto 10px auto;
+            width: 60px;
+            height: 8vh;
+            border-radius: 100px;
+            // animation: animacao1 1s infinite both;
+            background-color: black;
+        }
+
+        .photoEmployee, .propertiesEmployee, .email {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }   
+
+        .propertiesEmployee, .comunication {
+            padding: 10px;
+        }
+
+        .propertiesEmployee p {
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        .comunication {
+            font-family: Verdana, sans-serif;
+            background-color: gray;
+        }
+    }
+}
+
+// Responsividade da maior tela
+@media screen and (min-width: 1201px) {
+    .allCards {
+        height: 80vh;
+        .card {
+            height: 25vh;
+        }
+    }
+}
+
+// Animação da foto do card
+@keyframes animacao1 {
+    0% {
+        background-image: repeating-radial-gradient(rgb(0, 14, 96) 1%, red 25%);
+    }
+    100% {
+        background-image: repeating-radial-gradient( red, rgb(0, 14, 96) 25%);
+    }
+  }
+

@@ -1,0 +1,15 @@
+<div class="allCards">
+    <div class="card" *ngFor="let employee of employees">
+        <div class="photoEmployee">
+            <img src="{{ employee.foto }}" alt="Employee photo">
+        </div>
+        <div class="propertiesEmployee">
+            <p>{{ employee.nome }}</p>
+            <p>{{ employee.subobjeto.propriedade1 }}</p>
+            <p>{{ employee.subobjeto.propriedade2 }}</p>
+        </div>
+        <div class="comunication">
+            <a class="email" href="mailto:{{ employee.email }}">{{ employee.email }}</a>
+        </div>
+    </div>
+</div>
