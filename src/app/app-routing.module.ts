@@ -5,8 +5,13 @@ import { HomeComponent } from './view/home/home.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
     component: HomeComponent,
-    path: 'home'
+    path: 'home',
   },
   {
     component: EmployeeComponent,
