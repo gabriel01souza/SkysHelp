@@ -8,7 +8,7 @@
 
     .card {
         width: 250px;
-        margin: 10vh auto 10px auto;
+        margin: 10vh 5vw 10px 5vw;
         background-image: linear-gradient(to bottom, rgb(0, 14, 96) 10%, red);
 
         .photoEmployee {
@@ -47,7 +47,6 @@
 // Responsividade da maior tela
 @media screen and (min-width: 1201px) {
     .allCards {
-        height: 80vh;
         .card {
             height: 25vh;
         }
